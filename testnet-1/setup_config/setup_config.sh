@@ -3,7 +3,7 @@
 # Packages
 deploy_env="testnet-1"
 # The network block time +1 second - used for sleep command between txs
-block_time=61
+block_time=31
 dependency_packages="unzip logrotate git jq sed wget curl coreutils systemd"
 go_package_url="https://go.dev/dl/go1.18.linux-amd64.tar.gz"
 go_package_file_name=${go_package_url##*\/}
