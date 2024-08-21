@@ -8,8 +8,7 @@
                 "name": "cosmos hub mainnet",
                 "enabled": true,
                 "imports": [
-                    "COSMOSSDKFULL",
-                    "COSMOSSDK45DEP"
+                    "COSMOSSDK"
                 ],
                 "reliability_threshold": 268435455,
                 "data_reliability_enabled": true,
@@ -20,7 +19,7 @@
                 "shares": 1,
                 "min_stake_provider": {
                     "denom": "ulava",
-                    "amount": "100000000"
+                    "amount": "15000000000"
                 },
                 "api_collections": [
                     {
@@ -147,7 +146,11 @@
                             }
                         ]
                     }
-                ]
+                ],
+                "contributor": [
+                    "lava@1hn28tsm97wse4vq8shnw22cwypstmzz690tqcq"
+                ],
+                "contributor_percentage": 0.025
             },
             {
                 "index": "COSMOSHUBT",
@@ -165,7 +168,7 @@
                 "shares": 1,
                 "min_stake_provider": {
                     "denom": "ulava",
-                    "amount": "100000000"
+                    "amount": "15000000000"
                 },
                 "api_collections": [
                     {
@@ -234,7 +237,11 @@
                             }
                         ]
                     }
-                ]
+                ],
+                "contributor": [
+                    "lava@1hn28tsm97wse4vq8shnw22cwypstmzz690tqcq"
+                ],
+                "contributor_percentage": 0.025
             }
         ]
     },
