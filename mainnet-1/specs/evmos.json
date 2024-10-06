@@ -1,0 +1,2213 @@
+{
+  "proposal": {
+    "title": "Add Specs: Evmos",
+    "description": "Adding new specification support for relaying Evmos data on Lava",
+    "specs": [
+      {
+        "index": "EVMOS",
+        "name": "evmos mainnet",
+        "enabled": true,
+        "reliability_threshold": 268435455,
+        "data_reliability_enabled": true,
+        "block_distance_for_finalized_data": 0,
+        "blocks_in_finalization_proof": 1,
+        "average_block_time": 6500,
+        "allowed_block_lag_for_qos_sync": "2",
+        "block_last_updated": "0",
+        "min_stake_provider": {
+          "denom": "ulava",
+          "amount": "15000000000"
+        },
+        "providers_types": "dynamic",
+        "imports": [
+          "COSMOSSDK",
+          "ETHERMINT",
+          "ETH1"
+        ],
+        "api_collections": [
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "rest",
+              "internal_path": "",
+              "type": "GET",
+              "add_on": ""
+            },
+            "apis": [
+              {
+                "enabled": true,
+                "name": "/evmos/claims/v1/claims_records",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/claims/v1/claims_records/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/claims/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/claims/v1/total_unclaimed",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/epochs/v1/current_epoch",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/epochs/v1/epochs",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/erc20/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/erc20/v1/token_pairs",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/erc20/v1/token_pairs/{token}",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/account/{address}",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/balances/{address}",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/base_fee",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/codes/{address}",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/cosmos_account/{address}",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                "parser_arg": [
+                  "latest"
+                ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/estimate_gas",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/eth_call",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/storage/{address}/{key}",
+                "compute_units": 10,
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/trace_block",
+                "compute_units": 10,
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/trace_tx",
+                "compute_units": 10,
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/evm/v1/validator_account/{cons_address}",
+                "compute_units": 10,
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/feemarket/v1/base_fee",
+                "compute_units": 10,
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/feemarket/v1/block_gas",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/feemarket/v1/params",
+                "compute_units": 10,
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/incentives/v1/allocation_meters",
+                "compute_units": 10,
+                "extra_compute_units": 0,
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/incentives/v1/allocation_meters/{denom}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/incentives/v1/gas_meters/{contract}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/incentives/v1/gas_meters/{contract}/{participant}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/incentives/v1/incentives",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/incentives/v1/incentives/{contract}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/incentives/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/inflation/v1/circulating_supply",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/inflation/v1/epoch_mint_provision",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/inflation/v1/inflation_rate",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/inflation/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/inflation/v1/period",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/inflation/v1/skipped_epochs",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/recovery/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/vesting/v1/balances/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/vesting/v2/balances/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/revenue/v1/revenues/{withdrawer_address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/revenue/v1/revenues/{contract_address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/revenue/v1/revenues/{deployer_address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/revenue/v1/revenues",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "/evmos/revenue/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              }
+            ],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [
+              {
+                "name": "archive",
+                "rule": {
+                  "block": 9990
+                },
+                "cu_multiplier": 5
+              }
+            ],
+            "verifications": [
+              {
+                "name": "minimum-gas-price",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "50000000000.000000000000000000aevmos",
+                    "latest_distance": "0",
+                    "severity": "Warning"
+                  }
+                ]
+              },
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "evmos_9001-2",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "",
+                    "latest_distance": 14900,
+                    "severity": "Fail"
+                  },
+                  {
+                    "extension": "archive",
+                    "expected_value": "",
+                    "latest_distance": 1000000,
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "grpc",
+              "internal_path": "",
+              "type": "",
+              "add_on": ""
+            },
+            "apis": [
+              {
+                "enabled": true,
+                "name": "evmos.claims.v1.Query/ClaimsRecord",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.claims.v1.Query/ClaimsRecords",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.claims.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.claims.v1.Query/TotalUnclaimed",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.epochs.v1.Query/CurrentEpoch",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.epochs.v1.Query/EpochInfos",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.erc20.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.erc20.v1.Query/TokenPair",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.erc20.v1.Query/TokenPairs",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.incentives.v1.Query/AllocationMeter",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.incentives.v1.Query/AllocationMeters",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.incentives.v1.Query/GasMeter",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.incentives.v1.Query/GasMeters",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.incentives.v1.Query/Incentive",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.incentives.v1.Query/Incentives",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.incentives.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.inflation.v1.Query/CirculatingSupply",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.inflation.v1.Query/EpochMintProvision",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.inflation.v1.Query/InflationRate",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.inflation.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.inflation.v1.Query/Period",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.inflation.v1.Query/SkippedEpochs",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.recovery.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.vesting.v1.Query/Balances",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.revenue.v1.Query/DeployerRevenues",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.revenue.v1.Query/Revenues",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.vesting.v2.Query/Balances",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.revenue.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.revenue.v1.Query/WithdrawerRevenues",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "evmos.revenue.v1.Query/Revenue",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              }
+            ],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [
+              {
+                "name": "archive",
+                "rule": {
+                  "block": 9990
+                },
+                "cu_multiplier": 5
+              }
+            ],
+            "verifications": [
+              {
+                "name": "minimum-gas-price",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "50000000000.000000000000000000aevmos",
+                    "latest_distance": "0",
+                    "severity": "Warning"
+                  }
+                ]
+              },
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "evmos_9001-2",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "",
+                    "latest_distance": 14900,
+                    "severity": "Fail"
+                  },
+                  {
+                    "extension": "archive",
+                    "expected_value": "",
+                    "latest_distance": "1000000",
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "tendermintrpc",
+              "internal_path": "",
+              "type": "",
+              "add_on": ""
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [
+              {
+                "name": "archive",
+                "rule": {
+                  "block": 9990
+                },
+                "cu_multiplier": 5
+              }
+            ],
+            "verifications": [
+              {
+                "name": "minimum-gas-price",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "CiQ1MDAwMDAwMDAwMC4wMDAwMDAwMDAwMDAwMDAwMDBhZXZtb3M",
+                    "latest_distance": "0",
+                    "severity": "Warning"
+                  }
+                ]
+              },
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "evmos_9001-2",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "",
+                    "latest_distance": 14900,
+                    "severity": "Fail"
+                  },
+                  {
+                    "extension": "archive",
+                    "expected_value": "",
+                    "latest_distance": 1000000,
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "jsonrpc",
+              "internal_path": "",
+              "type": "POST",
+              "add_on": ""
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [
+              {
+                "name": "archive",
+                "rule": {
+                  "block": 9990
+                },
+                "cu_multiplier": 5
+              }
+            ],
+            "verifications": [
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "0x2329",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning",
+                "parse_directive": {
+                  "function_tag": "GET_BLOCK_BY_NUM",
+                  "function_template": "",
+                  "result_parsing": {
+                    "parser_arg": [],
+                    "parser_func": "EMPTY",
+                    "default_value": "",
+                    "encoding": ""
+                  },
+                  "api_name": ""
+              },
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "",
+                    "latest_distance": 14900,
+                    "severity": "Fail"
+                  },
+                  {
+                    "extension": "archive",
+                    "expected_value": "",
+                    "latest_distance": 1000000,
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "jsonrpc",
+              "internal_path": "",
+              "type": "POST",
+              "add_on": "debug"
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": [
+              {
+                "name": "enabled",
+                "parse_directive": {
+                  "function_tag": "VERIFICATION",
+                  "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"debug_traceBlockByNumber\",\"params\":[\"latest\", {\"tracer\": \"callTracer\"}],\"id\":1}",
+                  "result_parsing": {
+                    "parser_arg": [
+                      "0"
+                    ],
+                    "parser_func": "PARSE_BY_ARG",
+                    "default_value": "",
+                    "encoding": "hex"
+                  },
+                  "api_name": "debug_traceBlockByNumber"
+                },
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "*",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contributor": [
+          "lava@1utd592msy5cd434gqv8wh6mcmda6wlen2qll3q"
+        ],
+        "contributor_percentage": 0.035,
+        "shares": 1,
+        "identity": ""
+      },
+      {
+        "index": "EVMOST",
+        "name": "evmos testnet",
+        "enabled": true,
+        "reliability_threshold": 268435455,
+        "data_reliability_enabled": true,
+        "block_distance_for_finalized_data": 0,
+        "blocks_in_finalization_proof": 1,
+        "average_block_time": 6500,
+        "allowed_block_lag_for_qos_sync": 2,
+        "block_last_updated": "0",
+        "min_stake_provider": {
+          "denom": "ulava",
+          "amount": "15000000000"
+        },
+        "providers_types": "dynamic",
+        "imports": [
+          "EVMOS"
+        ],
+        "api_collections": [
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "rest",
+              "internal_path": "",
+              "type": "GET",
+              "add_on": ""
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": [
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "evmos_9000-4",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "grpc",
+              "internal_path": "",
+              "type": "",
+              "add_on": ""
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": [
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "evmos_9000-4",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "tendermintrpc",
+              "internal_path": "",
+              "type": "",
+              "add_on": ""
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": [
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "evmos_9000-4",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "jsonrpc",
+              "internal_path": "",
+              "type": "POST",
+              "add_on": ""
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": [
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "0x2328",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning",
+                "parse_directive": null,
+                "values": []
+              }
+            ]
+          }
+        ],
+        "contributor": [
+          "lava@1utd592msy5cd434gqv8wh6mcmda6wlen2qll3q"
+        ],
+        "contributor_percentage": 0.035,
+        "shares": "1",
+        "identity": ""
+      }
+    ]
+  },
+  "deposit": "10000000ulava"
+}
