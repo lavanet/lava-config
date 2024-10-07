@@ -1082,7 +1082,11 @@
                             }
                         ]
                     }
-                ]
+                ],
+                "contributor": [
+                    "lava@18rtt3ka0jc85qvvcnct0t7ayq6fva7692k9kvh"
+                ],
+                "contributor_percentage": 0.025
             }
         ]
     },
