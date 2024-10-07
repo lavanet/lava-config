@@ -11,7 +11,7 @@
         "data_reliability_enabled": true,
         "block_distance_for_finalized_data": 0,
         "blocks_in_finalization_proof": 1,
-        "average_block_time": 6500,
+        "average_block_time": 3900,
         "allowed_block_lag_for_qos_sync": "2",
         "block_last_updated": "0",
         "min_stake_provider": {
@@ -20,7 +20,7 @@
         },
         "providers_types": "dynamic",
         "imports": [
-          "COSMOSSDK",
+          "COSMOSSDK50",
           "ETHERMINT",
           "ETH1"
         ],
@@ -1077,7 +1077,7 @@
               {
                 "name": "archive",
                 "rule": {
-                  "block": 9990
+                  "block": 21230
                 },
                 "cu_multiplier": 5
               }
@@ -1114,7 +1114,7 @@
                   {
                     "extension": "",
                     "expected_value": "",
-                    "latest_distance": 14900,
+                    "latest_distance": 22154,
                     "severity": "Fail"
                   },
                   {
@@ -1834,7 +1834,7 @@
               {
                 "name": "archive",
                 "rule": {
-                  "block": 9990
+                  "block": 21230
                 },
                 "cu_multiplier": 5
               }
@@ -1871,7 +1871,7 @@
                   {
                     "extension": "",
                     "expected_value": "",
-                    "latest_distance": 14900,
+                    "latest_distance": 22154,
                     "severity": "Fail"
                   },
                   {
@@ -1900,7 +1900,7 @@
               {
                 "name": "archive",
                 "rule": {
-                  "block": 9990
+                  "block": 21230
                 },
                 "cu_multiplier": 5
               }
@@ -1937,7 +1937,7 @@
                   {
                     "extension": "",
                     "expected_value": "",
-                    "latest_distance": 14900,
+                    "latest_distance": 22154,
                     "severity": "Fail"
                   },
                   {
@@ -1966,7 +1966,7 @@
               {
                 "name": "archive",
                 "rule": {
-                  "block": 9990
+                  "block": 21230
                 },
                 "cu_multiplier": 5
               }
@@ -2001,7 +2001,7 @@
                   {
                     "extension": "",
                     "expected_value": "",
-                    "latest_distance": 14900,
+                    "latest_distance": 22154,
                     "severity": "Fail"
                   },
                   {
@@ -2070,7 +2070,7 @@
         "data_reliability_enabled": true,
         "block_distance_for_finalized_data": 0,
         "blocks_in_finalization_proof": 1,
-        "average_block_time": 6500,
+        "average_block_time": 3900,
         "allowed_block_lag_for_qos_sync": 2,
         "block_last_updated": "0",
         "min_stake_provider": {
