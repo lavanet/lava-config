@@ -9,6 +9,7 @@
                 "enabled": true,
                 "imports": [
                     "COSMOSSDKFULL"
+                    "COSMOSSDK50"
                 ],
                 "reliability_threshold": 268435455,
                 "data_reliability_enabled": true,
