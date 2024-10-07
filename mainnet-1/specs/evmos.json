@@ -887,7 +887,7 @@
                 "name": "pruning",
                 "values": [
                   {
-                    "latest_distance": 22000
+                    "latest_distance": 21600
                   },
                   {
                     "extension": "archive",
@@ -901,7 +901,7 @@
                 "name": "archive",
                 "cu_multiplier": 5,
                 "rule": {
-                  "block": 21900
+                  "block": 20700
                 }
               }
             ]
@@ -1481,7 +1481,7 @@
                 "name": "pruning",
                 "values": [
                   {
-                    "latest_distance": 10000
+                    "latest_distance": 21600
                   },
                   {
                     "extension": "archive",
@@ -1495,7 +1495,7 @@
                 "name": "archive",
                 "cu_multiplier": 5,
                 "rule": {
-                  "block": 9990
+                  "block": 20700
                 }
               }
             ]
@@ -1534,7 +1534,7 @@
                 "name": "pruning",
                 "values": [
                   {
-                    "latest_distance": 10000
+                    "latest_distance": 21600
                   },
                   {
                     "extension": "archive",
@@ -1548,7 +1548,7 @@
                 "name": "archive",
                 "cu_multiplier": 5,
                 "rule": {
-                  "block": 9990
+                  "block": 20700
                 }
               }
             ]
@@ -1581,7 +1581,7 @@
                 },
                 "values": [
                   {
-                    "latest_distance": 10000
+                    "latest_distance": 21600
                   },
                   {
                     "extension": "archive",
@@ -1595,7 +1595,7 @@
                 "name": "archive",
                 "cu_multiplier": 5,
                 "rule": {
-                  "block": 9990
+                  "block": 20700
                 }
               }
             ]
