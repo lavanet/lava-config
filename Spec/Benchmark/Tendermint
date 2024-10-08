@@ -1,0 +1,657 @@
+Summary for method: abci_info_20241002_121054.txt
+Total Calls: 161
+Average Latency: 0.1314 seconds
+Max Latency: 1.1321 seconds
+Min Latency: 0.0906 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.48 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: abci_query_20241002_121154.txt
+Total Calls: 167
+Average Latency: 0.1158 seconds
+Max Latency: 0.1658 seconds
+Min Latency: 0.0862 seconds
+Average CPU Usage: 0.36%
+Average RAM Usage: 0.50 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_20241002_121254.txt
+Total Calls: 166
+Average Latency: 0.1168 seconds
+Max Latency: 0.1887 seconds
+Min Latency: 0.0865 seconds
+Average CPU Usage: 0.34%
+Average RAM Usage: 0.41 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_by_hash_20241002_121354.txt
+Total Calls: 167
+Average Latency: 0.1125 seconds
+Max Latency: 0.1841 seconds
+Min Latency: 0.0744 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.42 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_results_20241002_121454.txt
+Total Calls: 165
+Average Latency: 0.1170 seconds
+Max Latency: 0.2548 seconds
+Min Latency: 0.0821 seconds
+Average CPU Usage: 0.22%
+Average RAM Usage: 0.45 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_search_20241002_121555.txt
+Total Calls: 165
+Average Latency: 0.1139 seconds
+Max Latency: 0.1669 seconds
+Min Latency: 0.0821 seconds
+Average CPU Usage: 0.23%
+Average RAM Usage: 0.47 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: blockchain_20241002_121655.txt
+Total Calls: 163
+Average Latency: 0.1176 seconds
+Max Latency: 0.2668 seconds
+Min Latency: 0.0866 seconds
+Average CPU Usage: 0.20%
+Average RAM Usage: 0.44 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_evidence_20241002_121755.txt
+Total Calls: 163
+Average Latency: 0.1164 seconds
+Max Latency: 0.1621 seconds
+Min Latency: 0.0848 seconds
+Average CPU Usage: 0.24%
+Average RAM Usage: 0.57 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_tx_async_20241002_121855.txt
+Total Calls: 162
+Average Latency: 0.1173 seconds
+Max Latency: 0.3679 seconds
+Min Latency: 0.0815 seconds
+Average CPU Usage: 0.21%
+Average RAM Usage: 0.48 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_tx_commit_20241002_121955.txt
+Total Calls: 162
+Average Latency: 0.1147 seconds
+Max Latency: 0.1601 seconds
+Min Latency: 0.0808 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.45 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_tx_sync_20241002_122055.txt
+Total Calls: 161
+Average Latency: 0.1159 seconds
+Max Latency: 0.1943 seconds
+Min Latency: 0.0836 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.53 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: check_tx_20241002_122156.txt
+Total Calls: 161
+Average Latency: 0.1137 seconds
+Max Latency: 0.2590 seconds
+Min Latency: 0.0791 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.46 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: commit_20241002_122256.txt
+Total Calls: 159
+Average Latency: 0.1166 seconds
+Max Latency: 0.1575 seconds
+Min Latency: 0.0798 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.42 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: consensus_params_20241002_122356.txt
+Total Calls: 161
+Average Latency: 0.1111 seconds
+Max Latency: 0.2904 seconds
+Min Latency: 0.0721 seconds
+Average CPU Usage: 0.29%
+Average RAM Usage: 0.46 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: consensus_state_20241002_122456.txt
+Total Calls: 160
+Average Latency: 0.1120 seconds
+Max Latency: 0.1506 seconds
+Min Latency: 0.0802 seconds
+Average CPU Usage: 0.26%
+Average RAM Usage: 0.51 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: dump_consensus_state_20241002_120954.txt
+Total Calls: 166
+Average Latency: 0.1201 seconds
+Max Latency: 0.2328 seconds
+Min Latency: 0.0874 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.54 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: genesis_20241002_122556.txt
+Total Calls: 159
+Average Latency: 0.1122 seconds
+Max Latency: 0.1653 seconds
+Min Latency: 0.0824 seconds
+Average CPU Usage: 0.30%
+Average RAM Usage: 0.50 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: genesis_chunked_20241002_122656.txt
+Total Calls: 159
+Average Latency: 0.1103 seconds
+Max Latency: 0.1760 seconds
+Min Latency: 0.0744 seconds
+Average CPU Usage: 0.30%
+Average RAM Usage: 0.49 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: health_20241002_122756.txt
+Total Calls: 159
+Average Latency: 0.1097 seconds
+Max Latency: 0.1875 seconds
+Min Latency: 0.0794 seconds
+Average CPU Usage: 0.16%
+Average RAM Usage: 0.51 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: net_info_20241002_122857.txt
+Total Calls: 156
+Average Latency: 0.1154 seconds
+Max Latency: 0.1685 seconds
+Min Latency: 0.0849 seconds
+Average CPU Usage: 0.28%
+Average RAM Usage: 0.50 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: num_unconfirmed_txs_20241002_122957.txt
+Total Calls: 157
+Average Latency: 0.1123 seconds
+Max Latency: 0.1945 seconds
+Min Latency: 0.0791 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.52 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: status_20241002_123057.txt
+Total Calls: 153
+Average Latency: 0.1178 seconds
+Max Latency: 0.1692 seconds
+Min Latency: 0.0852 seconds
+Average CPU Usage: 0.28%
+Average RAM Usage: 0.66 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: subscribe_20241002_123157.txt
+Total Calls: 154
+Average Latency: 0.1148 seconds
+Max Latency: 0.1716 seconds
+Min Latency: 0.0792 seconds
+Average CPU Usage: 0.22%
+Average RAM Usage: 0.59 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: tx_20241002_123257.txt
+Total Calls: 154
+Average Latency: 0.1137 seconds
+Max Latency: 0.2034 seconds
+Min Latency: 0.0786 seconds
+Average CPU Usage: 0.21%
+Average RAM Usage: 0.57 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: tx_search_20241002_123358.txt
+Total Calls: 154
+Average Latency: 0.1131 seconds
+Max Latency: 0.1723 seconds
+Min Latency: 0.0770 seconds
+Average CPU Usage: 0.24%
+Average RAM Usage: 0.52 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: unconfirmed_txs_20241002_123458.txt
+Total Calls: 152
+Average Latency: 0.1145 seconds
+Max Latency: 0.1670 seconds
+Min Latency: 0.0858 seconds
+Average CPU Usage: 0.24%
+Average RAM Usage: 0.61 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: unsubscribe_20241002_123558.txt
+Total Calls: 152
+Average Latency: 0.1155 seconds
+Max Latency: 0.2482 seconds
+Min Latency: 0.0786 seconds
+Average CPU Usage: 0.21%
+Average RAM Usage: 0.65 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: unsubscribe_all_20241002_123658.txt
+Total Calls: 150
+Average Latency: 0.1172 seconds
+Max Latency: 0.2363 seconds
+Min Latency: 0.0817 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.64 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: validators_20241002_123759.txt
+Total Calls: 151
+Average Latency: 0.1141 seconds
+Max Latency: 0.1916 seconds
+Min Latency: 0.0779 seconds
+Average CPU Usage: 0.26%
+Average RAM Usage: 0.59 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Traceback (most recent call last):
+  File "/home/babyscope/Benchmark/Stargaze/TENDERMINT/tanalyse.py", line 83, in <module>
+    analyze_benchmark_logs(log_directory)
+  File "/home/babyscope/Benchmark/Stargaze/TENDERMINT/tanalyse.py", line 75, in analyze_benchmark_logs
+    with pd.ExcelWriter(excel_filename, engine='openpyxl') as writer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/babyscope/Benchmark/myenv/lib/python3.12/site-packages/pandas/io/excel/_openpyxl.py", line 57, in __init__
+    from openpyxl.workbook import Workbook
+ModuleNotFoundError: No module named 'openpyxl'
+(myenv) babyscope@DESKTOP-JA1E1L7:~/Benchmark/Stargaze/TENDERMINT$ pip install openpyxl
+Collecting openpyxl
+  Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting et-xmlfile (from openpyxl)
+  Downloading et_xmlfile-1.1.0-py3-none-any.whl.metadata (1.8 kB)
+Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.9/250.9 kB 6.7 MB/s eta 0:00:00
+Downloading et_xmlfile-1.1.0-py3-none-any.whl (4.7 kB)
+Installing collected packages: et-xmlfile, openpyxl
+Successfully installed et-xmlfile-1.1.0 openpyxl-3.1.5
+(myenv) babyscope@DESKTOP-JA1E1L7:~/Benchmark/Stargaze/TENDERMINT$ python3 tanalyse.py
+Summary for method: abci_info_20241002_121054.txt
+Total Calls: 161
+Average Latency: 0.1314 seconds
+Max Latency: 1.1321 seconds
+Min Latency: 0.0906 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.48 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: abci_query_20241002_121154.txt
+Total Calls: 167
+Average Latency: 0.1158 seconds
+Max Latency: 0.1658 seconds
+Min Latency: 0.0862 seconds
+Average CPU Usage: 0.36%
+Average RAM Usage: 0.50 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_20241002_121254.txt
+Total Calls: 166
+Average Latency: 0.1168 seconds
+Max Latency: 0.1887 seconds
+Min Latency: 0.0865 seconds
+Average CPU Usage: 0.34%
+Average RAM Usage: 0.41 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_by_hash_20241002_121354.txt
+Total Calls: 167
+Average Latency: 0.1125 seconds
+Max Latency: 0.1841 seconds
+Min Latency: 0.0744 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.42 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_results_20241002_121454.txt
+Total Calls: 165
+Average Latency: 0.1170 seconds
+Max Latency: 0.2548 seconds
+Min Latency: 0.0821 seconds
+Average CPU Usage: 0.22%
+Average RAM Usage: 0.45 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: block_search_20241002_121555.txt
+Total Calls: 165
+Average Latency: 0.1139 seconds
+Max Latency: 0.1669 seconds
+Min Latency: 0.0821 seconds
+Average CPU Usage: 0.23%
+Average RAM Usage: 0.47 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: blockchain_20241002_121655.txt
+Total Calls: 163
+Average Latency: 0.1176 seconds
+Max Latency: 0.2668 seconds
+Min Latency: 0.0866 seconds
+Average CPU Usage: 0.20%
+Average RAM Usage: 0.44 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_evidence_20241002_121755.txt
+Total Calls: 163
+Average Latency: 0.1164 seconds
+Max Latency: 0.1621 seconds
+Min Latency: 0.0848 seconds
+Average CPU Usage: 0.24%
+Average RAM Usage: 0.57 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_tx_async_20241002_121855.txt
+Total Calls: 162
+Average Latency: 0.1173 seconds
+Max Latency: 0.3679 seconds
+Min Latency: 0.0815 seconds
+Average CPU Usage: 0.21%
+Average RAM Usage: 0.48 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_tx_commit_20241002_121955.txt
+Total Calls: 162
+Average Latency: 0.1147 seconds
+Max Latency: 0.1601 seconds
+Min Latency: 0.0808 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.45 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: broadcast_tx_sync_20241002_122055.txt
+Total Calls: 161
+Average Latency: 0.1159 seconds
+Max Latency: 0.1943 seconds
+Min Latency: 0.0836 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.53 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: check_tx_20241002_122156.txt
+Total Calls: 161
+Average Latency: 0.1137 seconds
+Max Latency: 0.2590 seconds
+Min Latency: 0.0791 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.46 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: commit_20241002_122256.txt
+Total Calls: 159
+Average Latency: 0.1166 seconds
+Max Latency: 0.1575 seconds
+Min Latency: 0.0798 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.42 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: consensus_params_20241002_122356.txt
+Total Calls: 161
+Average Latency: 0.1111 seconds
+Max Latency: 0.2904 seconds
+Min Latency: 0.0721 seconds
+Average CPU Usage: 0.29%
+Average RAM Usage: 0.46 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: consensus_state_20241002_122456.txt
+Total Calls: 160
+Average Latency: 0.1120 seconds
+Max Latency: 0.1506 seconds
+Min Latency: 0.0802 seconds
+Average CPU Usage: 0.26%
+Average RAM Usage: 0.51 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: dump_consensus_state_20241002_120954.txt
+Total Calls: 166
+Average Latency: 0.1201 seconds
+Max Latency: 0.2328 seconds
+Min Latency: 0.0874 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.54 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: genesis_20241002_122556.txt
+Total Calls: 159
+Average Latency: 0.1122 seconds
+Max Latency: 0.1653 seconds
+Min Latency: 0.0824 seconds
+Average CPU Usage: 0.30%
+Average RAM Usage: 0.50 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: genesis_chunked_20241002_122656.txt
+Total Calls: 159
+Average Latency: 0.1103 seconds
+Max Latency: 0.1760 seconds
+Min Latency: 0.0744 seconds
+Average CPU Usage: 0.30%
+Average RAM Usage: 0.49 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: health_20241002_122756.txt
+Total Calls: 159
+Average Latency: 0.1097 seconds
+Max Latency: 0.1875 seconds
+Min Latency: 0.0794 seconds
+Average CPU Usage: 0.16%
+Average RAM Usage: 0.51 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: net_info_20241002_122857.txt
+Total Calls: 156
+Average Latency: 0.1154 seconds
+Max Latency: 0.1685 seconds
+Min Latency: 0.0849 seconds
+Average CPU Usage: 0.28%
+Average RAM Usage: 0.50 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: num_unconfirmed_txs_20241002_122957.txt
+Total Calls: 157
+Average Latency: 0.1123 seconds
+Max Latency: 0.1945 seconds
+Min Latency: 0.0791 seconds
+Average CPU Usage: 0.31%
+Average RAM Usage: 0.52 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: status_20241002_123057.txt
+Total Calls: 153
+Average Latency: 0.1178 seconds
+Max Latency: 0.1692 seconds
+Min Latency: 0.0852 seconds
+Average CPU Usage: 0.28%
+Average RAM Usage: 0.66 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: subscribe_20241002_123157.txt
+Total Calls: 154
+Average Latency: 0.1148 seconds
+Max Latency: 0.1716 seconds
+Min Latency: 0.0792 seconds
+Average CPU Usage: 0.22%
+Average RAM Usage: 0.59 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: tx_20241002_123257.txt
+Total Calls: 154
+Average Latency: 0.1137 seconds
+Max Latency: 0.2034 seconds
+Min Latency: 0.0786 seconds
+Average CPU Usage: 0.21%
+Average RAM Usage: 0.57 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: tx_search_20241002_123358.txt
+Total Calls: 154
+Average Latency: 0.1131 seconds
+Max Latency: 0.1723 seconds
+Min Latency: 0.0770 seconds
+Average CPU Usage: 0.24%
+Average RAM Usage: 0.52 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: unconfirmed_txs_20241002_123458.txt
+Total Calls: 152
+Average Latency: 0.1145 seconds
+Max Latency: 0.1670 seconds
+Min Latency: 0.0858 seconds
+Average CPU Usage: 0.24%
+Average RAM Usage: 0.61 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: unsubscribe_20241002_123558.txt
+Total Calls: 152
+Average Latency: 0.1155 seconds
+Max Latency: 0.2482 seconds
+Min Latency: 0.0786 seconds
+Average CPU Usage: 0.21%
+Average RAM Usage: 0.65 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.00%
+Average Network Usage: 0.01 MB
+
+Summary for method: unsubscribe_all_20241002_123658.txt
+Total Calls: 150
+Average Latency: 0.1172 seconds
+Max Latency: 0.2363 seconds
+Min Latency: 0.0817 seconds
+Average CPU Usage: 0.27%
+Average RAM Usage: 0.64 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
+
+Summary for method: validators_20241002_123759.txt
+Total Calls: 151
+Average Latency: 0.1141 seconds
+Max Latency: 0.1916 seconds
+Min Latency: 0.0779 seconds
+Average CPU Usage: 0.26%
+Average RAM Usage: 0.59 MB
+Average Disk Usage: 0.00 MB
+Average GPU Usage: 0.01%
+Average Network Usage: 0.01 MB
