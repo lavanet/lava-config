@@ -1,0 +1,902 @@
+{
+  "proposal": {
+    "title": "Add Specs: ETHERMINT",
+    "description": "Adding default ETHERMINT specification",
+    "specs": [
+      {
+        "index": "ETHERMINT",
+        "name": "ethermint",
+        "enabled": false,
+        "reliability_threshold": 268435455,
+        "data_reliability_enabled": true,
+        "block_distance_for_finalized_data": 0,
+        "blocks_in_finalization_proof": 1,
+        "average_block_time": "6500",
+        "allowed_block_lag_for_qos_sync": "2",
+        "block_last_updated": "0",
+        "min_stake_provider": {
+          "denom": "ulava",
+          "amount": "15000000000"
+        },
+        "providers_types": "dynamic",
+        "imports": [],
+        "api_collections": [
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "rest",
+              "internal_path": "",
+              "type": "GET",
+              "add_on": ""
+            },
+            "apis": [
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/account/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/balances/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/base_fee",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/codes/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/cosmos_account/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/estimate_gas",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/eth_call",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/storage/{address}/{key}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/trace_block",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/trace_tx",
+                "compute_units": "20",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/validator_account/{cons_address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/virtual_frontier_bank_contract/by_denom/{min_denom}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/virtual_frontier_bank_contracts",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/virtual_frontier_contracts",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/evm/v1/virtual_frontier_contracts/{address}",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/feemarket/v1/base_fee",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/feemarket/v1/block_gas",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "/ethermint/feemarket/v1/params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              }
+            ],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": []
+          },
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "grpc",
+              "internal_path": "",
+              "type": "",
+              "add_on": ""
+            },
+            "apis": [
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/Account",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/Balance",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/BaseFee",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/Code",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/CosmosAccount",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/EstimateGas",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/EthCall",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/Storage",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/TraceBlock",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/TraceTx",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/ValidatorAccount",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/ListVirtualFrontierBankContracts",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/ListVirtualFrontierContracts",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/VirtualFrontierBankContractByDenom",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.evm.v1.Query/VirtualFrontierContractByAddress",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.feemarket.v1.Query/BaseFee",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.feemarket.v1.Query/BlockGas",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              },
+              {
+                "enabled": true,
+                "name": "ethermint.feemarket.v1.Query/Params",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0"
+              }
+            ],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": []
+          }
+        ],
+        "contributor": [
+          "lava@1utd592msy5cd434gqv8wh6mcmda6wlen2qll3q"
+        ],
+        "contributor_percentage": 0.025,
+        "shares": "1"
+      }
+    ]
+  },
+  "deposit": "10000000ulava"
+}
