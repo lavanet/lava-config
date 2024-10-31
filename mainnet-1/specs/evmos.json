@@ -851,7 +851,7 @@
                                 "name": "minimum-gas-price",
                                 "values": [
                                     {
-                                        "expected_value": "CiQ1MDAwMDAwMDAwMC4wMDAwMDAwMDAwMDAwMDAwMDBhZXZtb3M",
+                                        "expected_value": "CiQ1MDAwMDAwMDAwMC4wMDAwMDAwMDAwMDAwMDAwMDBhZXZtb3M=",
                                         "severity": "Warning"
                                     }
                                 ]
