@@ -1,0 +1,396 @@
+Summary for method: EXPERIMENTAL_changes
+Params:
+{
+  changes_type: 'account_changes',
+  account_ids: [ 'your_account.testnet' ],
+  block_id: 178971680
+}
+Total Requests: 500
+Average Latency: 0.3014 seconds
+Latency Standard Deviation: 0.1777 seconds
+Max Latency: 1.9461 seconds
+Min Latency: 0.0866 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.79%
+Average RAM Usage: 103.56 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_maintenance_windows
+Params:
+{ account_id: 'node0' }
+Total Requests: 500
+Average Latency: 0.3018 seconds
+Latency Standard Deviation: 0.1919 seconds
+Max Latency: 2.0300 seconds
+Min Latency: 0.0926 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.79%
+Average RAM Usage: 103.63 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_changes
+Params:
+{
+  changes_type: 'data_changes',
+  account_ids: [ 'guest-book.testnet' ],
+  key_prefix_base64: '',
+  block_id: 178971680
+}
+Total Requests: 500
+Average Latency: 0.3050 seconds
+Latency Standard Deviation: 0.1881 seconds
+Max Latency: 2.1333 seconds
+Min Latency: 0.0882 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.67%
+Average RAM Usage: 103.74 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: query
+Params:
+{
+  request_type: 'view_account',
+  finality: 'final',
+  account_id: 'nearkat.testnet'
+}
+Total Requests: 500
+Average Latency: 0.3363 seconds
+Latency Standard Deviation: 0.2339 seconds
+Max Latency: 2.1404 seconds
+Min Latency: 0.0935 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.37%
+Average RAM Usage: 104.45 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_changes
+Params:
+{
+  changes_type: 'all_access_key_changes',
+  account_ids: [ 'example-acct.testnet' ],
+  block_id: 'GpPixmPQqxN787D5BosAUuaXucupb6CmYkbUFhVo6WgQ'
+}
+Total Requests: 500
+Average Latency: 0.3376 seconds
+Latency Standard Deviation: 0.2342 seconds
+Max Latency: 2.1217 seconds
+Min Latency: 0.0842 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.47%
+Average RAM Usage: 104.49 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: query
+Params:
+{
+  request_type: 'call_function',
+  finality: 'final',
+  account_id: 'example.testnet',
+  method_name: 'get_balance',
+  args_base64: 'eyJwYXJhbSI6InZhbHVlIn0='
+}
+Total Requests: 500
+Average Latency: 0.3402 seconds
+Latency Standard Deviation: 0.2338 seconds
+Max Latency: 2.3672 seconds
+Min Latency: 0.0824 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.27%
+Average RAM Usage: 104.49 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: query
+Params:
+{
+  request_type: 'call_function',
+  finality: 'final',
+  account_id: 'dev-1588039999690',
+  method_name: 'get_num',
+  args_base64: 'e30='
+}
+Total Requests: 500
+Average Latency: 0.3403 seconds
+Latency Standard Deviation: 0.2368 seconds
+Max Latency: 2.1263 seconds
+Min Latency: 0.0747 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.43%
+Average RAM Usage: 104.43 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: query
+Params:
+{
+  request_type: 'call_function',
+  finality: 'final',
+  account_id: 'dev-1588039999690',
+  method_name: 'get_account_staked_balance',
+  args_base64: 'eyJhY2NvdW50X2lkIjoiZGV2LTE1ODgwMzk5OTk2OTAifQ=='
+}
+Total Requests: 500
+Average Latency: 0.3464 seconds
+Latency Standard Deviation: 0.2421 seconds
+Max Latency: 1.9597 seconds
+Min Latency: 0.0876 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.13%
+Average RAM Usage: 104.44 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_changes
+Params:
+{
+  changes_type: 'single_access_key_changes',
+  keys: [
+    {
+      account_id: 'example-acct.testnet',
+      public_key: 'ed25519:25KEc7t7MQohAJ4EDThd2vkksKkwangnuJFzcoiXj9oM'
+    }
+  ],
+  finality: 'final'
+}
+Total Requests: 500
+Average Latency: 0.3546 seconds
+Latency Standard Deviation: 0.3004 seconds
+Max Latency: 2.2426 seconds
+Min Latency: 0.0755 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.24%
+Average RAM Usage: 104.34 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_protocol_config
+Params:
+{ finality: 'final' }
+Total Requests: 500
+Average Latency: 0.3562 seconds
+Latency Standard Deviation: 0.2934 seconds
+Max Latency: 2.4677 seconds
+Min Latency: 0.0875 seconds
+Error Rate: 0.00%
+Average CPU Usage: 44.33%
+Average RAM Usage: 104.91 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_protocol_config
+Params:
+{ sync_checkpoint: 'genesis' }
+Total Requests: 500
+Average Latency: 0.3563 seconds
+Latency Standard Deviation: 0.3058 seconds
+Max Latency: 2.5876 seconds
+Min Latency: 0.0526 seconds
+Error Rate: 0.00%
+Average CPU Usage: 44.36%
+Average RAM Usage: 104.90 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: block
+Params:
+{ sync_checkpoint: 'genesis' }
+Total Requests: 500
+Average Latency: 0.3588 seconds
+Latency Standard Deviation: 0.3217 seconds
+Max Latency: 2.6085 seconds
+Min Latency: 0.0863 seconds
+Error Rate: 0.00%
+Average CPU Usage: 44.64%
+Average RAM Usage: 104.56 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_genesis_config
+Total Requests: 500
+Average Latency: 0.3591 seconds
+Latency Standard Deviation: 0.3127 seconds
+Max Latency: 2.4509 seconds
+Min Latency: 0.0533 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.01%
+Average RAM Usage: 104.85 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: gas_price
+Params:
+[ null ]
+Total Requests: 500
+Average Latency: 0.3627 seconds
+Latency Standard Deviation: 0.3242 seconds
+Max Latency: 2.1120 seconds
+Min Latency: 0.0572 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.64%
+Average RAM Usage: 105.06 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: status
+Total Requests: 500
+Average Latency: 0.3668 seconds
+Latency Standard Deviation: 0.3602 seconds
+Max Latency: 2.9668 seconds
+Min Latency: 0.0374 seconds
+Error Rate: 0.00%
+Average CPU Usage: 44.47%
+Average RAM Usage: 104.89 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: query
+Params:
+{
+  request_type: 'view_access_key_list',
+  finality: 'final',
+  account_id: 'example.testnet'
+}
+Total Requests: 500
+Average Latency: 0.3708 seconds
+Latency Standard Deviation: 0.4617 seconds
+Max Latency: 3.5255 seconds
+Min Latency: 0.0242 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.88%
+Average RAM Usage: 105.16 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_receipt
+Params:
+{ receipt_id: '2EbembRPJhREPtmHCrGv3Xtdm3xoc5BMVYHm3b2kjvMY' }
+Total Requests: 500
+Average Latency: 0.3781 seconds
+Latency Standard Deviation: 0.3367 seconds
+Max Latency: 2.8465 seconds
+Min Latency: 0.0456 seconds
+Error Rate: 0.00%
+Average CPU Usage: 46.22%
+Average RAM Usage: 104.98 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: block
+Params:
+{ finality: 'final' }
+Total Requests: 500
+Average Latency: 0.3797 seconds
+Latency Standard Deviation: 0.3777 seconds
+Max Latency: 2.0897 seconds
+Min Latency: 0.0234 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.69%
+Average RAM Usage: 105.89 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: query
+Params:
+{
+  request_type: 'view_access_key',
+  finality: 'final',
+  account_id: 'client.chainlink.testnet',
+  public_key: 'ed25519:H9k5eiU4xXS3M4z8HzKJSLaZdqGdGwBG49o7orNC4eZW'
+}
+Total Requests: 500
+Average Latency: 0.3845 seconds
+Latency Standard Deviation: 0.5048 seconds
+Max Latency: 3.7016 seconds
+Min Latency: 0.0155 seconds
+Error Rate: 0.00%
+Average CPU Usage: 43.96%
+Average RAM Usage: 105.12 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_changes_in_block
+Params:
+{ finality: 'final' }
+Total Requests: 500
+Average Latency: 0.3880 seconds
+Latency Standard Deviation: 0.3315 seconds
+Max Latency: 2.2718 seconds
+Min Latency: 0.0204 seconds
+Error Rate: 0.00%
+Average CPU Usage: 44.60%
+Average RAM Usage: 105.78 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: query
+Params:
+{
+  request_type: 'view_code',
+  finality: 'final',
+  account_id: 'guest-book.testnet'
+}
+Total Requests: 500
+Average Latency: 0.3883 seconds
+Latency Standard Deviation: 0.3239 seconds
+Max Latency: 2.3738 seconds
+Min Latency: 0.0201 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.00%
+Average RAM Usage: 106.17 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: network_info
+Total Requests: 500
+Average Latency: 0.4138 seconds
+Latency Standard Deviation: 0.4665 seconds
+Max Latency: 3.5932 seconds
+Min Latency: 0.0211 seconds
+Error Rate: 0.00%
+Average CPU Usage: 46.70%
+Average RAM Usage: 106.11 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: EXPERIMENTAL_tx_status
+Params:
+{
+  tx_hash: '6LNZ7i2tVwWopq5kGx5X7EGyDWM2kMV9beQYMRCeVmWw',
+  sender_account_id: 'bowen',
+  wait_until: 'EXECUTED'
+}
+Total Requests: 500
+Average Latency: 0.4254 seconds
+Latency Standard Deviation: 1.0649 seconds
+Max Latency: 10.6260 seconds
+Min Latency: 0.0182 seconds
+Error Rate: 0.00%
+Average CPU Usage: 43.12%
+Average RAM Usage: 105.95 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: validators
+Params:
+[ null ]
+Total Requests: 500
+Average Latency: 0.4695 seconds
+Latency Standard Deviation: 0.7580 seconds
+Max Latency: 4.5299 seconds
+Min Latency: 0.0236 seconds
+Error Rate: 0.00%
+Average CPU Usage: 45.36%
+Average RAM Usage: 106.07 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: chunk
+Params:
+{ chunk_id: '4ZLLisFzubEJp8SCopaCyJL6mDfXxUigQpeUZsF2zAFC' }
+Total Requests: 500
+Average Latency: 0.4816 seconds
+Latency Standard Deviation: 1.0011 seconds
+Max Latency: 12.7296 seconds
+Min Latency: 0.0185 seconds
+Error Rate: 0.00%
+Average CPU Usage: 43.33%
+Average RAM Usage: 105.72 MB
+Average Network Usage: 0.00 MB
+--------------------------------------
+Summary for method: tx
+Params:
+{
+  tx_hash: 'Ghau3g5gTdYozFAGe5qASchqKMd9G7BZRqtBqF7FdfLW',
+  sender_account_id: 'sender.testnet',
+  wait_until: 'EXECUTED'
+}
+Total Requests: 500
+Average Latency: 0.5468 seconds
+Latency Standard Deviation: 3.0219 seconds
+Max Latency: 38.6953 seconds
+Min Latency: 0.0172 seconds
+Error Rate: 0.00%
+Average CPU Usage: 42.05%
+Average RAM Usage: 100.38 MB
+Average Network Usage: 0.00 MB

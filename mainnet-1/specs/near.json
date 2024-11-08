@@ -1,0 +1,690 @@
+{
+  "proposal": {
+    "title": "Add Specs: Near",
+    "description": "Adding new specification support for relaying Near data on Lava",
+    "specs": [
+      {
+        "index": "NEAR",
+        "name": "near mainnet",
+        "enabled": true,
+        "reliability_threshold": 268435455,
+        "data_reliability_enabled": true,
+        "block_distance_for_finalized_data": 3,
+        "blocks_in_finalization_proof": 3,
+        "average_block_time": "1200",
+        "allowed_block_lag_for_qos_sync": "8",
+        "block_last_updated": "0",
+        "min_stake_provider": {
+          "denom": "ulava",
+          "amount": "5000000000"
+        },
+        "providers_types": "dynamic",
+        "imports": [],
+        "api_collections": [
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "jsonrpc",
+              "internal_path": "",
+              "type": "POST",
+              "add_on": ""
+            },
+            "apis": [
+              {
+                "enabled": true,
+                "name": "query",
+                "compute_units": "20",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "block_id"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "EXPERIMENTAL_changes",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "block_id"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "block",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "block_id",
+                    "=",
+                    "0"
+                  ],
+                  "parser_func": "PARSE_DICTIONARY_OR_ORDERED",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": [
+                  {
+                    "parse_path": ".params.finality",
+                    "value": "latest",
+                    "parse_type": "DEFAULT_VALUE",
+                    "rule": "=final || =optimistic"
+                  },
+                  {
+                    "parse_path": ".params.[0]",
+                    "value": "",
+                    "parse_type": "BLOCK_HASH",
+                    "rule": ""
+                  }
+                ]
+              },
+              {
+                "enabled": true,
+                "name": "EXPERIMENTAL_changes_in_block",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "block_id"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "chunk",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "block_id"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": [
+                  {
+                    "parse_path": ".params.[0]",
+                    "value": "",
+                    "parse_type": "BLOCK_HASH",
+                    "rule": ""
+                  }
+                ]
+              },
+              {
+                "enabled": true,
+                "name": "gas_price",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "0"
+                  ],
+                  "parser_func": "PARSE_BY_ARG",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "EXPERIMENTAL_genesis_config",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "EXPERIMENTAL_protocol_config",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "block_id"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "status",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": false,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "network_info",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": false,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "validators",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "block_id",
+                    "=",
+                    "0"
+                  ],
+                  "parser_func": "PARSE_DICTIONARY_OR_ORDERED",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "broadcast_tx_async",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": false,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 1,
+                  "hanging_api": true
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "5000",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "send_tx",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": false,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 1,
+                  "hanging_api": true
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "20000",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "broadcast_tx_commit",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": false,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 1,
+                  "hanging_api": true
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "20000",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "tx",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": true
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "10000",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "EXPERIMENTAL_tx_status",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "EXPERIMENTAL_receipt",
+                "compute_units": "10",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "latest"
+                  ],
+                  "parser_func": "DEFAULT",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              },
+              {
+                "enabled": true,
+                "name": "next_light_client_block",
+                "compute_units": "20",
+                "extra_compute_units": "0",
+                "category": {
+                  "deterministic": true,
+                  "local": false,
+                  "subscription": false,
+                  "stateful": 0,
+                  "hanging_api": false
+                },
+                "block_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "block_id"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "latest",
+                  "encoding": ""
+                },
+                "timeout_ms": "0",
+                "parsers": []
+              }
+            ],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [
+              {
+                "function_tag": "GET_BLOCK_BY_NUM",
+                "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"block\",\"params\":{\"block_id\":%d},\"id\":1}",
+                "result_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "header",
+                    "hash"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "",
+                  "encoding": "base64"
+                },
+                "api_name": "block"
+              },
+              {
+                "function_tag": "GET_BLOCKNUM",
+                "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"block\",\"params\":{\"finality\":\"final\"},\"id\":1}",
+                "result_parsing": {
+                  "parser_arg": [
+                    "0",
+                    "header",
+                    "height"
+                  ],
+                  "parser_func": "PARSE_CANONICAL",
+                  "default_value": "",
+                  "encoding": ""
+                },
+                "api_name": "block"
+              }
+            ],
+            "extensions": [
+              {
+                "name": "archive",
+                "rule": {
+                  "block": "63900"
+                },
+                "cu_multiplier": "5"
+              }
+            ],
+            "verifications": [
+              {
+                "name": "chain-id",
+                "parse_directive": {
+                  "function_tag": "VERIFICATION",
+                  "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"status\",\"params\":[],\"id\":1}",
+                  "result_parsing": {
+                    "parser_arg": [
+                      "0",
+                      "chain_id"
+                    ],
+                    "parser_func": "PARSE_CANONICAL",
+                    "default_value": "",
+                    "encoding": ""
+                  },
+                  "api_name": "status"
+                },
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "mainnet",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning",
+                "parse_directive": {
+                  "function_tag": "GET_BLOCK_BY_NUM",
+                  "function_template": "",
+                  "result_parsing": {
+                    "parser_arg": [],
+                    "parser_func": "EMPTY",
+                    "default_value": "",
+                    "encoding": ""
+                  },
+                  "api_name": ""
+                },
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "",
+                    "latest_distance": "64800",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning-archive",
+                "parse_directive": {
+                  "function_tag": "VERIFICATION",
+                  "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"block\",\"params\":{\"block_id\":9820210},\"id\":1}",
+                  "result_parsing": {
+                    "parser_arg": [
+                      "0",
+                      "header",
+                      "height"
+                    ],
+                    "parser_func": "PARSE_CANONICAL",
+                    "default_value": "",
+                    "encoding": ""
+                  },
+                  "api_name": "block"
+                },
+                "values": [
+                  {
+                    "extension": "archive",
+                    "expected_value": "9820210",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contributor": [
+          "lava@1utd592msy5cd434gqv8wh6mcmda6wlen2qll3q"
+        ],
+        "contributor_percentage": 0.035,
+        "shares": "1",
+        "identity": ""
+      },
+      {
+        "index": "NEART",
+        "name": "near testnet",
+        "enabled": true,
+        "reliability_threshold": 268435455,
+        "data_reliability_enabled": true,
+        "block_distance_for_finalized_data": 3,
+        "blocks_in_finalization_proof": 3,
+        "average_block_time": "1200",
+        "allowed_block_lag_for_qos_sync": "8",
+        "block_last_updated": "0",
+        "min_stake_provider": {
+          "denom": "ulava",
+          "amount": "5000000000"
+        },
+        "providers_types": "dynamic",
+        "imports": [
+          "NEAR"
+        ],
+        "api_collections": [
+          {
+            "enabled": true,
+            "collection_data": {
+              "api_interface": "jsonrpc",
+              "internal_path": "",
+              "type": "POST",
+              "add_on": ""
+            },
+            "apis": [],
+            "headers": [],
+            "inheritance_apis": [],
+            "parse_directives": [],
+            "extensions": [],
+            "verifications": [
+              {
+                "name": "chain-id",
+                "parse_directive": null,
+                "values": [
+                  {
+                    "extension": "",
+                    "expected_value": "testnet",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              },
+              {
+                "name": "pruning-archive",
+                "parse_directive": {
+                  "function_tag": "VERIFICATION",
+                  "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"block\",\"params\":{\"block_id\":42376888},\"id\":1}",
+                  "result_parsing": {
+                    "parser_arg": [
+                      "0",
+                      "header",
+                      "height"
+                    ],
+                    "parser_func": "PARSE_CANONICAL",
+                    "default_value": "",
+                    "encoding": ""
+                  },
+                  "api_name": "block"
+                },
+                "values": [
+                  {
+                    "extension": "archive",
+                    "expected_value": "42376888",
+                    "latest_distance": "0",
+                    "severity": "Fail"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contributor": [
+          "lava@1utd592msy5cd434gqv8wh6mcmda6wlen2qll3q"
+        ],
+        "contributor_percentage": 0.035,
+        "shares": "1",
+        "identity": ""
+      }
+    ]
+  },
+  "deposit": "1750000000ulava"
+}
