@@ -1,7 +1,7 @@
 {
     "proposal": {
         "title": "Add Specs: Movement",
-        "description": "Adding new specification support for relaying Movement data on Lava",
+        "description": "Adding new specification support for relaying Movement testnet bardock data on Lava",
         "specs": [
             {
                 "index": "APT1",
@@ -375,38 +375,38 @@
                         ],
                         "headers": [
                             {
-                                "name": "x-aptos-ledger-version",
-                                "kind": "pass_reply"
+                              "name": "x-aptos-ledger-version",
+                              "kind": "pass_reply"
                             },
                             {
-                                "name": "x-aptos-block-height",
-                                "kind": "pass_reply"
+                              "name": "x-aptos-block-height",
+                              "kind": "pass_reply"
                             },
                             {
-                                "name": "x-aptos-ledger-oldest-version",
-                                "kind": "pass_reply"
+                              "name": "x-aptos-ledger-oldest-version",
+                              "kind": "pass_reply"
                             },
                             {
-                                "name": "x-aptos-oldest-block-height",
-                                "kind": "pass_reply"
+                              "name": "x-aptos-oldest-block-height",
+                              "kind": "pass_reply"
                             },
                             {
-                                "name": "x-aptos-chain-id",
-                                "kind": "pass_reply"
+                              "name": "x-aptos-chain-id",
+                              "kind": "pass_reply"
                             },
                             {
-                                "name": "x-aptos-epoch",
-                                "kind": "pass_reply"
+                              "name": "x-aptos-epoch",
+                              "kind": "pass_reply"
                             },
                             {
-                                "name": "x-aptos-ledger-timestampusec",
-                                "kind": "pass_ignore"
+                              "name": "x-aptos-ledger-timestampusec",
+                              "kind": "pass_ignore"
                             },
                             {
-                                "name": "x-aptos-cursor",
-                                "kind": "pass_reply"
+                              "name": "x-aptos-cursor",
+                              "kind": "pass_reply"
                             }
-                        ],
+                          ],
                         "inheritance_apis": [],
                         "parse_directives": [
                             {
@@ -452,7 +452,10 @@
                                 },
                                 "values": [
                                     {
-                                        "expected_value": "1"
+                                        "extension": "",
+                                        "expected_value": "1",
+                                        "latest_distance": 0,
+                                        "severity": "Fail"
                                     }
                                 ]
                             },
@@ -472,12 +475,17 @@
                                 },
                                 "values": [
                                     {
-                                        "latest_distance": 432000
-                                    },
-                                    {
+                                        "extension": "",
+                                        "expected_value": "",
+                                        "latest_distance": 21600,
+                                        "severity": "Fail"
+                                      },
+                                      {
                                         "extension": "archive",
-                                        "expected_value": "0"
-                                    }
+                                        "expected_value": "0",
+                                        "latest_distance": 0,
+                                        "severity": "Fail"
+                                      }
                                 ]
                             }
                         ],
@@ -486,7 +494,7 @@
                                 "name": "archive",
                                 "cu_multiplier": 5,
                                 "rule": {
-                                    "block": 427500
+                                    "block": 21300
                                 }
                             }
                         ]
@@ -669,60 +677,29 @@
                             }
                         ],
                         "inheritance_apis": [],
-                        "parse_directives": [
-                        ],
+                        "parse_directives": [],
                         "verifications": [
                             {
                                 "name": "chain-id",
-                                "parse_directive": {
-                                    "function_template": "/",
-                                    "function_tag": "VERIFICATION",
-                                    "result_parsing": {
-                                        "parser_arg": [
-                                            "0",
-                                            "chain_id"
-                                        ],
-                                        "parser_func": "PARSE_CANONICAL"
-                                    },
-                                    "api_name": "/"
-                                },
                                 "values": [
                                     {
-                                        "expected_value": "1"
+                                        "expected_value": "4"
                                     }
                                 ]
                             },
                             {
                                 "name": "pruning",
-                                "parse_directive": {
-                                    "function_template": "/",
-                                    "function_tag": "VERIFICATION",
-                                    "result_parsing": {
-                                        "parser_arg": [
-                                            "0",
-                                            "oldest_block_height"
-                                        ],
-                                        "parser_func": "PARSE_CANONICAL"
-                                    },
-                                    "api_name": "/"
-                                },
                                 "values": [
                                     {
-                                        "latest_distance": 432000
-                                    },
-                                    {
-                                        "extension": "archive",
-                                        "expected_value": "0"
+                                        "latest_distance": 2400
                                     }
                                 ]
                             }
                         ],
                         "extensions": [
                             {
-                                "name": "archive",
-                                "cu_multiplier": 5,
                                 "rule": {
-                                    "block": 427500
+                                    "block": 1
                                 }
                             }
                         ]
@@ -744,10 +721,84 @@
                 "contributor": [
                   "lava@1w3qs6ksgzy66rjljmsjnetlqpvvhl9qkvntf0a"
                 ],
-                "contributor_percentage": "0.025",
-                "shares": "1"
+                "contributor_percentage": "0.025"
+            },
+            {
+                "index": "MOVEMENTT",
+                "name": "movement testnet bardock",
+                "enabled": true,
+                "imports": [
+                    "MOVEMENT"
+                ],
+                "reliability_threshold": 268435455,
+                "data_reliability_enabled": true,
+                "block_distance_for_finalized_data": 5,
+                "blocks_in_finalization_proof": 5,
+                "average_block_time": 1000,
+                "allowed_block_lag_for_qos_sync": 50,
+                "shares": 1,
+                "min_stake_provider": {
+                    "denom": "ulava",
+                    "amount": "5000000000"
+                },
+                "api_collections": [
+                    {
+                        "enabled": true,
+                        "collection_data": {
+                            "api_interface": "rest",
+                            "internal_path": "",
+                            "type": "GET",
+                            "add_on": ""
+                        },
+                        "apis": [],
+                        "inheritance_apis": [],
+                        "parse_directives": [],
+                        "verifications": [
+                            {
+                                "name": "chain-id",
+                                "values": [
+                                    {
+                                        "expected_value": "250"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "pruning",
+                                "values": [
+                                    {
+                                        "latest_distance": 2400
+                                    }
+                                ]
+                            }
+                        ],
+                        "extensions": [
+                            {
+                                "rule": {
+                                    "block": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "enabled": true,
+                        "collection_data": {
+                            "api_interface": "rest",
+                            "internal_path": "",
+                            "type": "POST",
+                            "add_on": ""
+                        },
+                        "apis": [],
+                        "headers": [],
+                        "inheritance_apis": [],
+                        "parse_directives": []
+                    }
+                ],
+                "contributor": [
+                  "lava@1w3qs6ksgzy66rjljmsjnetlqpvvhl9qkvntf0a"
+                ],
+                "contributor_percentage": "0.025"
             }
         ]
     },
-    "deposit": "10000000ulava"
+    "deposit": "1750000000ulava"
 }
