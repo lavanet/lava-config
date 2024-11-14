@@ -1,7 +1,7 @@
 {
     "proposal": {
         "title": "Add Specs: Movement",
-        "description": "Adding new specification support for relaying Movement testnet bardock data on Lava",
+        "description": "Adding new specification support for relaying Movement data on Lava",
         "specs": [
             {
                 "index": "APT1",
