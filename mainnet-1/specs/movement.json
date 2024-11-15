@@ -761,7 +761,9 @@
                                 "name": "pruning",
                                 "values": [
                                     {
-                                        "latest_distance": 2400
+                                        "latest_distance": 2400,
+                                        "expected_value": 0
+
                                     },
                                     {
                                       "extension": "archive",
