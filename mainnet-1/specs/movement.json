@@ -626,7 +626,7 @@
             {
                 "index": "MOVEMENT",
                 "name": "movement mainnet",
-                "enabled": true,
+                "enabled": false,
                 "imports": [
                     "APT1"
                 ],
