@@ -692,6 +692,12 @@
                                 "values": [
                                     {
                                         "latest_distance": 2400
+                                    },
+                                    {
+                                      "extension": "archive",
+                                      "expected_value": "0",
+                                      "latest_distance": 0,
+                                      "severity": "Fail"
                                     }
                                 ]
                             }
@@ -756,6 +762,12 @@
                                 "values": [
                                     {
                                         "latest_distance": 2400
+                                    },
+                                    {
+                                      "extension": "archive",
+                                      "expected_value": "0",
+                                      "latest_distance": 0,
+                                      "severity": "Fail"
                                     }
                                 ]
                             }
