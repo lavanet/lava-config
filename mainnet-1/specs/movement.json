@@ -703,19 +703,6 @@
                                 }
                             }
                         ]
-                    },
-                    {
-                        "enabled": true,
-                        "collection_data": {
-                            "api_interface": "rest",
-                            "internal_path": "",
-                            "type": "POST",
-                            "add_on": ""
-                        },
-                        "apis": [],
-                        "headers": [],
-                        "inheritance_apis": [],
-                        "parse_directives": []
                     }
                 ],
                 "contributor": [
@@ -778,19 +765,6 @@
                                 }
                             }
                         ]
-                    },
-                    {
-                        "enabled": true,
-                        "collection_data": {
-                            "api_interface": "rest",
-                            "internal_path": "",
-                            "type": "POST",
-                            "add_on": ""
-                        },
-                        "apis": [],
-                        "headers": [],
-                        "inheritance_apis": [],
-                        "parse_directives": []
                     }
                 ],
                 "contributor": [
