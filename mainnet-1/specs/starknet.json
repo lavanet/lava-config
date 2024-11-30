@@ -598,7 +598,28 @@
                                         "expected_value": "*"
                                     }
                                 ]
-                            }
+                            },
+                            {
+                                "name": "pruning-archive",
+                                  "parse_directive": {
+                                      "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"starknet_getBlockWithTxHashes\",\"params\":[{\"block_number\":1}],\"id\":1}",
+                                      "function_tag": "VERIFICATION",
+                                      "result_parsing": {
+                                          "parser_arg": [
+                                              "0",
+                                              "block_number"
+                                          ],
+                                          "parser_func": "PARSE_CANONICAL"
+                                      },
+                                      "api_name": "starknet_getBlockWithTxHashes"
+                                  },
+                                  "values": [
+                                      {
+                                          "extension": "archive",
+                                          "expected_value": "1"
+                                      }
+                                  ]  
+                              }
                         ]
                     },
                     {
@@ -1001,6 +1022,27 @@
                                         "expected_value": "0x534e5f5345504f4c4941"
                                     }
                                 ]
+                            },
+                            {
+                              "name": "pruning-archive",
+                                "parse_directive": {
+                                    "function_template": "{\"jsonrpc\":\"2.0\",\"method\":\"starknet_getBlockWithTxHashes\",\"params\":[{\"block_number\":1}],\"id\":1}",
+                                    "function_tag": "VERIFICATION",
+                                    "result_parsing": {
+                                        "parser_arg": [
+                                            "0",
+                                            "block_number"
+                                        ],
+                                        "parser_func": "PARSE_CANONICAL"
+                                    },
+                                    "api_name": "starknet_getBlockWithTxHashes"
+                                },
+                                "values": [
+                                    {
+                                        "extension": "archive",
+                                        "expected_value": "1"
+                                    }
+                                ]  
                             }
                         ]
                     },
