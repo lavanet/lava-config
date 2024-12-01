@@ -28,7 +28,10 @@ jobs:
 
       - name: Copy specs to lava
         run: |
-          cp -r $GITHUB_WORKSPACE lava/specs
+          mkdir -p lava/specs/mainnet-1/specs
+          mkdir -p lava/specs/testnet-2/specs
+          cp -r $GITHUB_WORKSPACE/mainnet-1/specs lava/specs/mainnet-1/specs
+          cp -r $GITHUB_WORKSPACE/testnet-2/specs lava/specs/testnet-2/specs
 
       - name: Run Tests
         working-directory: lava/x/spec/keeper
