@@ -1,47 +1,55 @@
-# Description
+# Lava Network Spec Champion Pull Request
 
-Closes: #XXXX
+## Personal Information
+- Discord Username: 
+- Lava Champion Wallet Address: 
 
-<!-- Add a description of the changes that this PR introduces and the files that
-are the most critical to review. -->
+## Spec Details
+- [ ] This is a spec add
+- [ ] This is a spec update
+
+### Network Coverage
+- [ ] Mainnet implementation included
+- [ ] Testnet implementation included
+
+### Staking Requirements
+- Minimum Staking Amount (`min_stake_provider`): 5,000,000,000ulava
+
+### Activity Commission Rate (`contributor_percentage`)
+Please check all that apply and provide the total percentage:
+- [ ] Running a provider on testnet (up to 1%)
+- [ ] Creating new spec from scratch (up to 1%)
+- [ ] Inheriting existing specs (0.5% mandatory)
+- [ ] Benchmarking CU and timeouts (1%)
+- [ ] Supporting 20+ providers for 3 months (1%)
+- [ ] Referral-based incentive pools (2-3%)
+
+Total Commission Rate: __%
+
+## Champion Background and Experience
+[Describe your experience running nodes]
+
+### Previous Lava Provider Contributions
+[Detail your contributions to the Lava Provider community]
+
+## Technical Implementation
+### Endpoint Information
+- Public Endpoint Used for Testing: 
+
+### Testing Details
+[Attach or link to testing logs]
+
+## Technical Review Checklist
+- [ ] Average block and spec parameters
+- [ ] Chain Id verification
+- [ ] Pruning verification (pruned: 24H, archive: 23H40M)
+- [ ] Inherited specs verified
+- [ ] Spec name confirmed
+- [ ] Testing logs reviewed
+- [ ] New APIs reviewed
+
+## Additional Notes
+[Include any additional information or context that might be relevant]
 
 ---
-
-## Author Checklist
-
-*All items are required. Please add a note to the item if the item is not applicable and
-please add links to any relevant follow up issues.*
-
-I have...
-
-* [ ] read the [contribution guide](https://github.com/lavanet/lava/blob/main/CONTRIBUTING.md)
-* [ ] included the correct [type prefix](https://github.com/commitizen/conventional-commit-types/blob/v3.0.0/index.json) in the PR title, you can find examples of the prefixes below:
-    <!-- * `feat`: A new feature
-    * `fix`: A bug fix
-    * `docs`: Documentation only changes
-    * `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-    * `refactor`: A code change that neither fixes a bug nor adds a feature
-    * `perf`: A code change that improves performance
-    * `test`: Adding missing tests or correcting existing tests
-    * `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-    * `ci`: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
-    * `chore`: Other changes that don't modify src or test files
-    * `revert`: Reverts a previous commit -->
-* [ ] confirmed `!` in the type prefix if API or client breaking change
-* [ ] targeted the `main` branch
-* [ ] provided a link to the relevant issue or specification
-* [ ] reviewed "Files changed" and left comments if necessary
-* [ ] included the necessary unit and integration tests
-* [ ] updated the relevant documentation or specification, including comments for [documenting Go code](https://blog.golang.org/godoc)
-* [ ] confirmed all CI checks have passed
-
-## Reviewers Checklist
-
-*All items are required. Please add a note if the item is not applicable and please add
-your handle next to the items reviewed if you only reviewed selected items.*
-
-I have...
-
-* [ ] confirmed the correct [type prefix](https://github.com/commitizen/conventional-commit-types/blob/v3.0.0/index.json) in the PR title
-* [ ] confirmed all author checklist items have been addressed
-* [ ] reviewed state machine logic, API design and naming, documentation is accurate, tests and test coverage
+Note: Please ensure all sections are filled out completely before submitting. Incomplete submissions may delay the review process.
