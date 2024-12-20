@@ -1,0 +1,1639 @@
+{
+    "proposal": {
+      "title": "Add spec: Kyve mainnet",
+      "description": "This proposal is to add the Kyve spec.",
+      "specs": [
+        {
+          "index": "KYVE",
+          "name": "kyve mainnet",
+          "enabled": true,
+          "reliability_threshold": 268435455,
+          "data_reliability_enabled": true,
+          "block_distance_for_finalized_data": 0,
+          "blocks_in_finalization_proof": 1,
+          "average_block_time": 6000,
+          "allowed_block_lag_for_qos_sync": 2,
+          "shares": 1,
+          "providers_types": 1,
+          "imports": [
+            "COSMOSSDK50"
+          ],
+          "min_stake_provider": {
+            "denom": "ulava",
+            "amount": "5000000000"
+          },
+          "api_collections": [
+            {
+              "enabled": true,
+              "collection_data": {
+                "api_interface": "rest",
+                "internal_path": "",
+                "type": "GET",
+                "add_on": ""
+              },
+              "apis": [
+                {
+                  "enabled": true,
+                  "name": "/kyve/bundles/v1beta1/params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/delegation/v1beta1/params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/funders/v1beta1/params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/global/v1beta1/params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/pool/v1beta1/params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/account_assets/{address}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/account_delegation_unbondings/{address}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/account_funded_list/{address}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/account_redelegation/{address}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/can_propose/{pool_id}/{staker}/{proposer}/{from_index}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/can_validate/{pool_id}/{valaddress}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/can_vote/{pool_id}/{staker}/{voter}/{storage_id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/current_vote_status/{pool_id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/v1/bundles/{pool_id}/{id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/v1/bundles/{pool_id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/delegator/{staker}/{delegator}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/delegators_by_staker/{staker}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/stakers_by_delegator/{delegator}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/funder/{address}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/funders",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/fundings_by_funder/{address}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/fundings_by_pool/{pool_id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/pool/{id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/pools",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/staker/{address}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/stakers",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/stakers_by_pool/{pool_id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/query/v1beta1/stakers_by_pool_count",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/stakers/v1beta1/params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/team/v1beta1/team_info",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/team/v1beta1/team_vesting_account/{id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/team/v1beta1/team_vesting_accounts",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/team/v1beta1/team_vesting_status/{id}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "/kyve/team/v1beta1/team_vesting_status_by_time/{id}/{time}",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                }
+              ],
+              "headers": [],
+              "inheritance_apis": [],
+              "parse_directives": [],
+              "verifications": [
+                {
+                  "name": "chain-id",
+                  "values": [
+                    {
+                      "expected_value": "kyve-1"
+                    }
+                  ]
+                },
+                {
+                  "name": "pruning",
+                  "values": [
+                    {
+                      "latest_distance": 14400
+                    },
+                    {
+                      "extension": "archive",
+                      "expected_value": "0"
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "archive",
+                  "cu_multiplier": 5,
+                  "rule": {
+                    "block": 14200
+                  }
+                }
+              ]
+            },
+            {
+              "enabled": true,
+              "collection_data": {
+                "api_interface": "grpc",
+                "internal_path": "",
+                "type": "",
+                "add_on": ""
+              },
+              "apis": [
+                {
+                  "enabled": true,
+                  "name": "kyve.bundles.v1beta1.Query/Params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.delegation.v1beta1.Query/Params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.funders.v1beta1.Query/Params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.global.v1beta1.Query/Params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.pool.v1beta1.Query/Params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryAccount/AccountAssets",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryAccount/AccountDelegationUnbondings",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryAccount/AccountFundedList",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryAccount/AccountRedelegation",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryBundles/CanPropose",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryBundles/CanValidate",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryBundles/CanVote",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryBundles/CurrentVoteStatus",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryBundles/FinalizedBundleQuery",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryBundles/FinalizedBundlesQuery",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryDelegation/Delegator",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryDelegation/DelegatorsByStaker",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryDelegation/StakersByDelegator",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryFunders/Funder",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryFunders/Funders",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryFunders/FundingsByFunder",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryFunders/FundingsByPool",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryParams/Params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryPool/Pool",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryPool/Pools",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryStakers/Staker",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryStakers/Stakers",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryStakers/StakersByPool",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.query.v1beta1.QueryStakers/StakersByPoolCount",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.stakers.v1beta1.Query/Params",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.team.v1beta1.Query/TeamInfo",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.team.v1beta1.Query/TeamVestingAccount",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.team.v1beta1.Query/TeamVestingAccounts",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.team.v1beta1.Query/TeamVestingStatus",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                },
+                {
+                  "enabled": true,
+                  "name": "kyve.team.v1beta1.Query/TeamVestingStatusByTime",
+                  "compute_units": 10,
+                  "extra_compute_units": 0,
+                  "category": {
+                    "deterministic": true,
+                    "local": false,
+                    "subscription": false,
+                    "stateful": 0,
+                    "hanging_api": false
+                  },
+                  "block_parsing": {
+                    "parser_arg": [
+                      "latest"
+                    ],
+                    "parser_func": "DEFAULT",
+                    "default_value": "",
+                    "encoding": ""
+                  }
+                }
+              ],
+              "headers": [],
+              "inheritance_apis": [],
+              "parse_directives": [],
+              "verifications": [
+                {
+                  "name": "chain-id",
+                  "values": [
+                    {
+                      "expected_value": "kyve-1"
+                    }
+                  ]
+                },
+                {
+                  "name": "pruning",
+                  "values": [
+                    {
+                      "latest_distance": 14400
+                    },
+                    {
+                      "extension": "archive",
+                      "expected_value": "0"
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "archive",
+                  "cu_multiplier": 5,
+                  "rule": {
+                    "block": 14200
+                  }
+                }
+              ]
+            },
+            {
+              "enabled": true,
+              "collection_data": {
+                "api_interface": "tendermintrpc",
+                "internal_path": "",
+                "type": "",
+                "add_on": ""
+              },
+              "apis": [],
+              "headers": [],
+              "inheritance_apis": [],
+              "parse_directives": [],
+              "verifications": [
+                {
+                  "name": "chain-id",
+                  "values": [
+                    {
+                      "expected_value": "kyve-1"
+                    }
+                  ]
+                },
+                {
+                  "name": "pruning",
+                  "values": [
+                    {
+                      "latest_distance": 14400
+                    },
+                    {
+                      "extension": "archive",
+                      "expected_value": "0"
+                    }
+                  ]
+                }
+              ],
+              "extensions": [
+                {
+                  "name": "archive",
+                  "cu_multiplier": 5,
+                  "rule": {
+                    "block": 14200
+                  }
+                }
+              ]
+            }
+          ],
+          "contributor": [
+            "lava@1r0n6tl824c05h9gu48ms88mcxgtea9v9et9xtc"
+          ],
+          "contributor_percentage": "0.03"
+        }
+      ]
+    },
+     "deposit": "7000000000ulava"
+  }
